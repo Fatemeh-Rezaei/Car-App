@@ -8,7 +8,6 @@ function CategoriesList() {
   const { categories } = router.query;
 
   const categoryCars = carsData.filter((car) => car.category === categories);
-  console.log(categoryCars);
 
   return <CarsList data={categoryCars} />;
 }
